@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Append a zsh function alias to ~/.zshrc, idempotently.
+"""Append a zsh function alias to a zsh rc file, idempotently.
 
 Use case: turn a trigger word (English or 中文) into a one-liner that runs
 any command. zsh supports CJK function names, so 中文 trigger works.
@@ -42,8 +42,8 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--rcfile",
-        default=str(Path.home() / ".zshrc"),
-        help="Target rc file (default: ~/.zshrc)",
+        default=os.environ.get("LOVSTUDIO_ZSH_ALIAS_RCFILE") or str(Path.home() / ".zshrc"),
+        help="Target rc file (default: LOVSTUDIO_ZSH_ALIAS_RCFILE or ~/.zshrc)",
     )
     p.add_argument("--dry-run", action="store_true", help="Print the entry, don't write")
     p.add_argument("--remove", action="store_true", help="Remove the entry for --name instead of adding")

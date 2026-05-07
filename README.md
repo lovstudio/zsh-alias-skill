@@ -1,6 +1,6 @@
 # lovstudio:zsh-alias
 
-![Version](https://img.shields.io/badge/version-0.1.0-CC785C)
+![Version](https://img.shields.io/badge/version-0.2.0-CC785C)
 
 Add a zsh alias / function to `~/.zshrc` idempotently. Supports ASCII
 names (`zxsd`, `gs`) and 中文 function names (`中信书店`).
@@ -10,7 +10,7 @@ Part of [lovstudio skills](https://github.com/lovstudio/skills) — by [lovstudi
 ## Install
 
 ```bash
-git clone https://github.com/lovstudio/zsh-alias-skill ~/.claude/skills/lovstudio-zsh-alias
+npx lovstudio skills add zsh-alias -g -y
 ```
 
 Requires: Python 3.8+ (stdlib only). zsh.
@@ -20,7 +20,7 @@ Requires: Python 3.8+ (stdlib only). zsh.
 Add a 中文 trigger that runs `claude` with a prompt, plus an English shortcut:
 
 ```bash
-python3 ~/.claude/skills/lovstudio-zsh-alias/scripts/add_alias.py \
+python3 scripts/add_alias.py \
   --name 中信书店 \
   --also-as zxsd \
   --cmd 'claude "用一句温暖、具体、不肉麻的话让我开心，20字以内"' \
@@ -76,6 +76,11 @@ zsh supports CJK function names natively, no quoting tricks needed.
 Shell aliases require pressing **Enter**. If you want a trigger that fires
 the moment you finish typing a word (no Enter), you need an input-method
 shortcut or Hammerspoon — not this skill.
+
+## User Configuration
+
+Set `LOVSTUDIO_ZSH_ALIAS_RCFILE` to change the default rc file. `--rcfile`
+still takes precedence.
 
 ## License
 

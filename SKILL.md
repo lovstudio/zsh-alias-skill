@@ -1,5 +1,5 @@
 ---
-name: lovstudio:zsh-alias
+name: lovstudio-zsh-alias
 description: >
   Add a zsh alias / function to the user's ~/.zshrc, idempotently and safely.
   Supports both ASCII names (e.g. `gs`, `zxsd`) and 中文 function names
@@ -10,10 +10,11 @@ description: >
 license: MIT
 compatibility: >
   Requires Python 3.8+ (stdlib only). zsh on macOS / Linux.
-  Uses ~/.zshrc by default; pass --rcfile for other shells' rc.
+  Uses LOVSTUDIO_ZSH_ALIAS_RCFILE or ~/.zshrc by default; pass --rcfile for
+  other shells' rc.
 metadata:
   author: lovstudio
-  version: "0.1.0"
+  version: "0.2.0"
   tags: [zsh, alias, shell, productivity]
 ---
 
@@ -54,7 +55,7 @@ If the user already gave the trigger + command in plain language ("中信书店
 ### Step 2: Dry-run preview
 
 ```bash
-python3 ~/.claude/skills/lovstudio-zsh-alias/scripts/add_alias.py \
+python3 scripts/add_alias.py \
   --name <trigger> \
   --cmd '<shell command>' \
   --comment '<one-line explanation>' \
@@ -80,7 +81,7 @@ Then they can type the trigger + Enter.
 ### Removing an alias
 
 ```bash
-python3 ~/.claude/skills/lovstudio-zsh-alias/scripts/add_alias.py \
+python3 scripts/add_alias.py \
   --name <trigger> --cmd unused --remove
 ```
 
@@ -119,3 +120,8 @@ it on re-run:
 - Don't `--simple` for CJK names; the script will reject it.
 - The user must `source ~/.zshrc` (or open a new terminal) to pick up the
   new alias. Always say so after writing.
+
+## User Configuration
+
+Set `LOVSTUDIO_ZSH_ALIAS_RCFILE` to change the default rc file. `--rcfile`
+still takes precedence.
