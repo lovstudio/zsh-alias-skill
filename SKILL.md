@@ -104,11 +104,11 @@ Each entry is wrapped in sentinel markers so the script can find and update
 it on re-run:
 
 ```
-# >>> lovstudio:zsh-alias >>> <name>
+# >>> lovstudio-zsh-alias >>> <name>
 # <comment>
 <name>() { <cmd> }
 <also-as>() { <name> "$@" }
-# <<< lovstudio:zsh-alias <<< <name>
+# <<< lovstudio-zsh-alias <<< <name>
 ```
 
 ## Notes for Claude
