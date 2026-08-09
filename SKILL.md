@@ -1,5 +1,5 @@
 ---
-name: lovstudio-zsh-alias
+name: sgc-zsh-alias
 description: >
   Add a zsh alias / function to the user's ~/.zshrc, idempotently and safely.
   Supports both ASCII names (e.g. `gs`, `zxsd`) and 中文 function names
@@ -104,11 +104,11 @@ Each entry is wrapped in sentinel markers so the script can find and update
 it on re-run:
 
 ```
-# >>> lovstudio-zsh-alias >>> <name>
+# >>> sgc-zsh-alias >>> <name>
 # <comment>
 <name>() { <cmd> }
 <also-as>() { <name> "$@" }
-# <<< lovstudio-zsh-alias <<< <name>
+# <<< sgc-zsh-alias <<< <name>
 ```
 
 ## Notes for Claude

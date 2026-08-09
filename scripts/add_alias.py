@@ -17,8 +17,8 @@ import re
 import sys
 from pathlib import Path
 
-MARKER_BEGIN = "# >>> lovstudio-zsh-alias >>>"
-MARKER_END = "# <<< lovstudio-zsh-alias <<<"
+MARKER_BEGIN = "# >>> sgc-zsh-alias >>>"
+MARKER_END = "# <<< sgc-zsh-alias <<<"
 
 
 def parse_args() -> argparse.Namespace:
