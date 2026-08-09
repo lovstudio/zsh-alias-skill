@@ -5,12 +5,12 @@
 Add a zsh alias / function to `~/.zshrc` idempotently. Supports ASCII
 names (`zxsd`, `gs`) and 中文 function names (`中信书店`).
 
-Part of [lovstudio skills](https://github.com/lovstudio/skills) — by [lovstudio.ai](https://lovstudio.ai)
+Part of [skills](https://example.com/skills/skills) — by [example.com](https://example.com)
 
 ## Install
 
 ```bash
-npx lovstudio skills add zsh-alias -g -y
+npx skills add zsh-alias -g -y
 ```
 
 Requires: Python 3.8+ (stdlib only). zsh.
@@ -79,7 +79,7 @@ shortcut or Hammerspoon — not this skill.
 
 ## User Configuration
 
-Set `LOVSTUDIO_ZSH_ALIAS_RCFILE` to change the default rc file. `--rcfile`
+Set `SKILL_ZSH_ALIAS_RCFILE` to change the default rc file. `--rcfile`
 still takes precedence.
 
 ## License

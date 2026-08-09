@@ -42,8 +42,8 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--rcfile",
-        default=os.environ.get("LOVSTUDIO_ZSH_ALIAS_RCFILE") or str(Path.home() / ".zshrc"),
-        help="Target rc file (default: LOVSTUDIO_ZSH_ALIAS_RCFILE or ~/.zshrc)",
+        default=os.environ.get("SKILL_ZSH_ALIAS_RCFILE") or str(Path.home() / ".zshrc"),
+        help="Target rc file (default: SKILL_ZSH_ALIAS_RCFILE or ~/.zshrc)",
     )
     p.add_argument("--dry-run", action="store_true", help="Print the entry, don't write")
     p.add_argument("--remove", action="store_true", help="Remove the entry for --name instead of adding")

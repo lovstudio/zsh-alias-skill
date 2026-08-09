@@ -9,5 +9,5 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) · Versioning: 
 
 - standardize zsh rc configuration
 - rename frontmatter to Agent Skills-compatible name
-- support LOVSTUDIO_ZSH_ALIAS_RCFILE
+- support SKILL_ZSH_ALIAS_RCFILE
 
