@@ -1,4 +1,4 @@
-# sgc-zsh-alias
+# lov-zsh-alias
 
 ![Version](https://img.shields.io/badge/version-0.2.0-CC785C)
 
@@ -49,11 +49,11 @@ Each entry is wrapped in sentinel markers. Re-running with the same
 `--name` updates in place — no duplicates:
 
 ```
-# >>> sgc-zsh-alias >>> 中信书店
+# >>> lov-zsh-alias >>> 中信书店
 # 中信书店 → 启动 claude 说一句开心话
 中信书店() { claude "..." }
 zxsd() { 中信书店 "$@" }
-# <<< sgc-zsh-alias <<< 中信书店
+# <<< lov-zsh-alias <<< 中信书店
 ```
 
 zsh supports CJK function names natively, no quoting tricks needed.
