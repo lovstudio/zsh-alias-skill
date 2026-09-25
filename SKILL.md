@@ -14,11 +14,11 @@ compatibility: >
   other shells' rc.
 metadata:
   author: contributors
-  version: "0.2.0"
+  version: "0.2.1"
   tags: [zsh, alias, shell, productivity]
 ---
 
-# zsh-alias — Idempotent zsh alias / function installer
+# 终端快捷指令 · Shell Shortcuts
 
 Append a zsh alias or function to `~/.zshrc` behind sentinel markers, so
 re-running updates the entry in place instead of duplicating it. Works for
