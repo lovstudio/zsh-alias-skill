@@ -1,6 +1,6 @@
 # 终端快捷指令 · Shell Shortcuts
 
-![Version](https://img.shields.io/badge/version-0.2.1-CC785C)
+![Version](https://img.shields.io/badge/version-0.2.2-CC785C)
 
 Add a zsh alias / function to `~/.zshrc` idempotently. Supports ASCII
 names (`zxsd`, `gs`) and 中文 function names (`中信书店`).
@@ -10,7 +10,7 @@ Part of [skills](https://example.com/skills/skills) — by [example.com](https:/
 ## Install
 
 ```bash
-npx skills add zsh-alias -g -y
+npx lovstudio skills add zsh-alias -g -y
 ```
 
 Requires: Python 3.8+ (stdlib only). zsh.
